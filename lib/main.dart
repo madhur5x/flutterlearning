@@ -13,13 +13,14 @@ class MyApp extends StatelessWidget {
     int days = 10;
 
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       // home: homepage(),
       themeMode: ThemeMode.light,
         theme: ThemeData
         (
             primarySwatch: Colors.blue,
             fontFamily: GoogleFonts.lato().fontFamily,
-            
+
         ),
       darkTheme: ThemeData
       (
@@ -28,7 +29,7 @@ class MyApp extends StatelessWidget {
       ),
       //initialRoute: "/Login_Page",
       routes: {
-        "/": (context) => Login_Page(),
+        "/": (context) => HomePage(),
         MyRoutes.homeRoutes: (context) => HomePage(),
         MyRoutes.loginRoutes: (context) => Login_Page()
       },
