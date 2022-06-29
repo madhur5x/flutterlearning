@@ -10,12 +10,12 @@ class HomePage extends StatelessWidget {
       ),
       body: Center(
         child: Container(
-          child: Text('hello world! times $no',
+          child: Text('you can go on!$no',
           style:TextStyle(
             fontWeight: FontWeight.bold,
             fontStyle: FontStyle.italic,
-            fontSize: 40,
-            color: Colors.blueAccent,
+            fontSize: 30,
+            color: Colors.red,
             ),
           ),
         ),
