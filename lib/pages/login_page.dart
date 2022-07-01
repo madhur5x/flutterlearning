@@ -27,7 +27,6 @@ class _Login_PageState extends State<Login_Page> {
   @override
   Widget build(BuildContext context) {
     return Material(
-      color: Colors.white,
       child: SingleChildScrollView(
         child: Form(
           key: _formkey,
@@ -98,7 +97,7 @@ class _Login_PageState extends State<Login_Page> {
                               : Text(
                                   "Log-In",
                                   style: TextStyle(
-                                      color: Colors.white,
+                                      color: Colors.black,
                                       fontSize: 16,
                                       fontWeight: FontWeight.bold),
                                 ),
