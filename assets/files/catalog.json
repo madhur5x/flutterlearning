@@ -5,7 +5,6 @@
             "id": 1, 
             "name": "iPhone 12 mini", 
             "desc": "Apple's iphone 12 mini", 
-            "color": "33505a",
             "img": "https://www.citypng.com/public/uploads/preview/-21602682593dtehg3tocl.png",
             "price": 850
         },
@@ -14,7 +13,6 @@
             "id":2,
             "name":"iPhone 12 ",
             "desc":"Apple's iPhone 12",
-            "color":"#00ac51",
             "img":"https://themayanagari.com/wp-content/uploads/2021/04/3.jpg",
             "price":950        
         },
@@ -22,7 +20,6 @@
             "id":3,
             "name":"iPhone 12 pro",
             "desc":" Apple's iphone 12 pro",
-            "color":"#",
             "img":"https://themayanagari.com/wp-content/uploads/2021/04/Apple-iPhone-12-Pro-Max-Png-Transparent.jpg",
             "price" :1000
         },
@@ -31,39 +28,34 @@
             "name":"iPhone 12 Pro Max",
             "desc":" Apple's iphone 12 pro max",
             "img":"https://images.dailyobjects.com/marche/product-images/1101/slick-phone-case-cover-for-iphone-12-pro-images/Nimbus-Phone-Case-Cover-For-iPhone-12-Pro.png",
-            "color":"#e0bfae",
             "price":1200
         },
         {
             "id":4,
             "name":"iPhone 13 mimi",
             "desc":"Apple's iPhone 13 mini",
-            "img":"",
-            "colour":"#e3e4e9",
+            "img":"https://pngimg.com/uploads/iphone_13/iphone_13_PNG12.png",
             "price": 1500
         },
         {
             "id":5,
             "name":"iPhone 13 ",
             "desc":"Apple's iPhone 13",
-            "img":"",
-            "colour":"#f73984",
+            "img":"https://c.neh.tw/thumb/f/350/cf080317b43245b4ada7.jpg",
             "price": 1700
         },
         {
             "id":6,
             "name":"iPhone 13 pro",
             "desc":"Apple's iPhone 13 pro",
-            "img":"",
-            "colour":"#1c1c1c",
+            "img":"https://freebiehive.com/wp-content/uploads/2021/12/iphone-13-pro-graphite-png.jpg",
             "price": 1899
         },
         {
             "id":7,
             "name":"iPhone 13 pro max",
             "desc":"Apple's iPhone 13",
-            "img":"",
-            "colour":"#7c95eb",
+            "img":"https://images.dailyobjects.com/marche/product-images/1101/dailyobjects-popcorn-icon-black-hybrid-clear-case-cover-for-iphone-13-pro-max-images/designer-hybrid-clear-case-iphone-13-pro-10.png",
             "price": 2000
         }
 

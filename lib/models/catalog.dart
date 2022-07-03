@@ -1,20 +1,11 @@
-class catalog{
- static final items = [
-  Item(
-    id: 001, 
-    name: "iPhone 12 pro", 
-    desc: "Apple iphone 12 pro", 
-    color: "33505a",
-    img: "http://atlas-content-cdn.pixelsquid.com/stock-images/iphone-12-pro-max-smartphone-5EX2mr2-600.jpg",
-    price: 999,
-    )];
-
+class catalog {
+  static  List<Item> items = [];
 }
+
 class Item {
   final int id;
   final String name;
   final String desc;
-  final String color;
   final String img;
   final num price;
 
@@ -22,10 +13,18 @@ class Item {
       {required this.id,
       required this.name,
       required this.desc,
-      required this.color,
       required this.img,
-      required this.price}) {}
+      required this.price});
+
+     factory Item.fromMap(Map<String, dynamic>map) {
+         return  Item(
+        id: map["id"],
+        name: map["name"],
+        desc: map["desc"],
+        img: map["img"],
+        price: map["price"],
+        );
+        
+
+  }
 }
-
-
-
