@@ -42,17 +42,36 @@ class _HomePageState extends State<HomePage> {
       ),
       body: Padding(
         padding: const EdgeInsets.all(16.0),
-        child:  (catalog.items!=null && catalog.items.isNotEmpty)
-        ?ListView.builder(
-            itemCount: catalog.items.length,
-            itemBuilder: (BuildContext context, int index) {
-              return ItemWidget(
-                item: catalog.items[index],
-              );
-            })
-            :Center(
-              child: CircularProgressIndicator()
-              ),
+        child: (catalog.items != null && catalog.items.isNotEmpty)
+            ? GridView.builder(
+                gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+                  crossAxisCount: 2,
+                  mainAxisSpacing: 10.0,
+                  crossAxisSpacing: 10.0,
+                ),
+                itemBuilder: (context, index) {
+                  final item = catalog.items[index];
+                  return Card(
+                    elevation: 2.0,
+                    clipBehavior: Clip.antiAlias,
+                    shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(5)),
+                    child: GridTile(
+                        header: Container(
+                          child: Text(item.name),
+                          padding: const EdgeInsets.all(12),
+                          decoration: BoxDecoration(color: Colors.amber[600]),
+                        ),
+                        footer: Container(
+                          child: Text(item.price.toString()),
+                          decoration: BoxDecoration(color: Colors.grey[350]),
+                        ),
+                        child: Image.network(item.img)),
+                  );
+                },
+                itemCount: catalog.items.length,
+              )
+            : Center(child: CircularProgressIndicator()),
       ),
     );
   }
